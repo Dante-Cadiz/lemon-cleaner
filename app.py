@@ -30,3 +30,4 @@ if images_buffer is not None:
         st.image(cleaned_img, caption=f"Cleaned image - Image Size: {cleaned_array.shape[1]}px width x {cleaned_array.shape[0]}px height")
 
     
+app.run()
