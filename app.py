@@ -9,7 +9,8 @@ st.title("Lemon Image Cleaning Helper")
 
 st.write(
         f"* Upload lemon images here for data cleaning and save "
-        f"them to your machine to use in the main application."
+        f"them to your machine to use in the main application. \n"
+        f"* https://lemon-quality-control.herokuapp.com/"
         )
 
 st.write("---")
@@ -27,6 +28,6 @@ if images_buffer is not None:
         st.image(img_pil, caption=f"Original image - Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
         cleaned_img = clean_input_image(img=img_pil)
         cleaned_array = np.array(cleaned_img)
-        st.image(cleaned_img, caption=f"Cleaned image - Image Size: {cleaned_array.shape[1]}px width x {cleaned_array.shape[0]}px height")
+        st.image(cleaned_img, caption=f"Cleaned image - Image Size: {cleaned_array.shape[2]}px width x {cleaned_array.shape[1]}px height")
 
     
