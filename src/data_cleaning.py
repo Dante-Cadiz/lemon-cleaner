@@ -3,9 +3,12 @@ import numpy as np
 from rembg import remove
 from PIL import Image
 
+
 def clean_input_image(img: np.ndarray) -> np.ndarray:  
     """
-    Rewrite this function to also preformat the image, or possibly just only allow input of the cleaned data
+    Removes background of image using Rembg, gets bounding box
+    of foreground element and crops image to bounding box dimensions.
+    Returns image array.
     """
     removed = remove(img)
     imageBox = removed.getbbox()
