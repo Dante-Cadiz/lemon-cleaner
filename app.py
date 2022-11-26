@@ -6,7 +6,7 @@ import pandas as pd
 
 from src.data_cleaning import clean_input_image
 
-st.title("Lemon Image Cleaning Helper")
+st.title("Lemon Image Cleaner")
 
 st.write(
         f"* Upload lemon images here for data cleaning and save "
